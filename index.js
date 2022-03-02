@@ -4,6 +4,10 @@ const port = 3000
 
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/",(req,res) =>{
+	res.send("Hello");
+})
+
 app.post("/bfhl",(req,res) => {
     const data = req.body.data;
 
